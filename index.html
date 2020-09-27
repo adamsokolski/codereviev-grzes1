@@ -14,12 +14,12 @@
     styl:
     <select id="styl">
       <option>prosty</option>
-      <option id="kursywa">kursywa</option>
+      <option id="kursywa" value="kursywa">kursywa</option>
     <br />
 
     <script>
       function red() {
-        var styl = document.getElementById("styl");
+        var styl = document.getElementById("styl").value;
         if (styl === "kursywa") {
           document.getElementById("kolor").style =
             "color:red; font-style: italic";
@@ -27,14 +27,14 @@
           document.getElementById("kolor").style = "color: red";
         }}
       function green(){
-        var styl = document.getElementById("styl");
+        var styl = document.getElementById("styl").value;
         if (styl === "kursywa"){
         document.getElementById("kolor").style = "color: green; ; font-style: italic";
       } else {
           document.getElementById("kolor").style = "color: green";
           }}
       function blue() {
-        var styl = document.getElementById("styl");
+        var styl = document.getElementById("styl").value;
         if (styl === "kursywa"){
         document.getElementById("kolor").style = "color: blue; font-style: italic";
       } else {
