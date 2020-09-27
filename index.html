@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p id="kolor">TEKST testowy !@#$ 1234</p>
+    <button onclick="red()" id="czerwony">R</button>
+    <button onclick="green()" id="zielony">G</button>
+    <button onclick="blue()" id="niebieski">B</button><br />
+    styl:
+    <select id="styl">
+      <option>prosty</option>
+      <option id="kursywa">kursywa</option>
+    <br />
+
+    <script>
+      function red() {
+        var styl = document.getElementById("styl");
+        if (styl === "kursywa") {
+          document.getElementById("kolor").style =
+            "color:red; font-style: italic";
+        } else {
+          document.getElementById("kolor").style = "color: red";
+        }}
+      function green(){
+        var styl = document.getElementById("styl");
+        if (styl === "kursywa"){
+        document.getElementById("kolor").style = "color: green; ; font-style: italic";
+      } else {
+          document.getElementById("kolor").style = "color: green";
+          }}
+      function blue() {
+        var styl = document.getElementById("styl");
+        if (styl === "kursywa"){
+        document.getElementById("kolor").style = "color: blue; font-style: italic";
+      } else {
+          document.getElementById("kolor").style = "color: blue";
+          }}
+    </script>
+  </body>
+</html>
